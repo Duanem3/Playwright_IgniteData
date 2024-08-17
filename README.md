@@ -1,7 +1,11 @@
 # Notes/assumptions/issues
 
-- You should think about changing the date picker as it is not so user friendly. You cannot enter a date manually without having to select the date on the date picker. You should be able to enter a date manually into the picker
-- It is very difficult to remove a date and enter a blank date. This makes it hard to test whether the validation is working for a blank date field. As if you remove hte date, it seems to use the previously entered date. So you cannot remove a date and submit a blank date (for testing purposes)
+- You should think about changing the date picker as it is not so user friendly. You cannot enter a date manually without having to select the date on the date picker. You should be able to enter a date manually into the picker.
+- The automated test could not select the 'Add new user' button whilst the date picker was showing. You had to click an actual date on the picker for the button to become enabled
+- Also you cannot select years from the date picker therefore you have to scroll really far is you have an older date
+- It is very difficult to remove a date and enter a blank date. This makes it hard to test whether the validation is working for a blank date field. As when you remove the date, it seems to use the previously entered date. So you cannot remove a date and submit a blank date (for testing purposes)
+- Maybe the date field should be empty as default and not be prefilled with todays date
+- There should be some indication as to what format the date is in, as it isnt clear at first what format it takes
 - When you are adding a user, when you enter a name and a profession and then remove them, you get a "*" error validation message. However this message should be a bit more descriptive, for example "Please enter a name". It seems to show a more relevant message on edit user mode
 - It is not clearly indicated with the 'Add new User' button when it is enabled and disabled. Maybe a colur change of enable or disabled state should be applied to indicate users that they can click the button
 - There is no indication that you have entered an invalid date. Forexample, you can enter a date such as "abcd2024-08-17".
