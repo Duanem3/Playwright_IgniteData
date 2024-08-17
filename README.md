@@ -1,10 +1,13 @@
-Notes/assumptions/issues
+# Notes/assumptions/issues
 
-You should think about changing the date picker as it is not so user friendly. You cannot enter a date manually without having to select the date on the date picker. You should be able to enter a date manually into the picker
-It is very difficult to remove a date and enter a blank date. This makes it hard to test whether the validation is working for a blank date field. As if you remove hte date, it seems to use the previously entered date. So you cannot remove a date and submit a blank date (for testing purposes)
-When you enter a name and a profession and then remove them, you get a "*" error validaion message. However this message should be a bit more descriptive, for example "Please enter a name"
-It is not clearly indicated with the 'Add new User' button when it is enabled and disabled. Maybe a colur change of enable or disabled state should be applied to indicate users that they can click the button
-There is no indication that you have entered an invalid date. Forexample, you can enter a date such as "abcd2024-08-17". 
+- You should think about changing the date picker as it is not so user friendly. You cannot enter a date manually without having to select the date on the date picker. You should be able to enter a date manually into the picker
+- It is very difficult to remove a date and enter a blank date. This makes it hard to test whether the validation is working for a blank date field. As if you remove hte date, it seems to use the previously entered date. So you cannot remove a date and submit a blank date (for testing purposes)
+- When you are adding a user, when you enter a name and a profession and then remove them, you get a "*" error validation message. However this message should be a bit more descriptive, for example "Please enter a name". It seems to show a more relevant message on edit user mode
+- It is not clearly indicated with the 'Add new User' button when it is enabled and disabled. Maybe a colur change of enable or disabled state should be applied to indicate users that they can click the button
+- There is no indication that you have entered an invalid date. Forexample, you can enter a date such as "abcd2024-08-17".
+- Should think about adding ids to the field elements as it the best method for interacting with elements. At the moment, using the name attribute is the next best way, however this can cause maintainability issues if there are other elements on the page with the same name or the name changes in the future
+- Maybe the 'Profession' field should have text length validation just like the name field. As when the profession is really long, the view users table gets misaligned and doesnt look good
+- You can create name and profession with just blank space marks as valid characters. This should not be allowed 
 
 
 Here is some instructions to run the tests
