@@ -48,7 +48,8 @@ To run the tests in headed mode and in chrome (with the browser UI visible):
 ### Running Specific Tests
 To run a specific test file:
 
-npx playwright test tests/your-test-file.spec.js
+```npx playwright test tests/your-test-file.spec.js```
+
 Replace your-test-file.spec.js with the test file you want to run
 
 For example,
