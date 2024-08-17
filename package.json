@@ -1,0 +1,19 @@
+{
+  "name": "playwright_ignitedata",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.46.1",
+    "@types/node": "^22.4.0",
+    "nyc": "^17.0.0",
+    "playwright": "^1.46.1",
+    "v8-to-istanbul": "^9.3.0"
+  }
+}
