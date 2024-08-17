@@ -11,7 +11,8 @@
 - There is no indication that you have entered an invalid date. Forexample, you can enter a date such as "abcd2024-08-17".
 - Should think about adding ids to the field elements as it the best method for interacting with elements. At the moment, using the name attribute is the next best way, however this can cause maintainability issues if there are other elements on the page with the same name or the name changes in the future
 - Maybe the 'Profession' field should have text length validation just like the name field. As when the profession is really long, the view users table gets misaligned and doesnt look good
-- You can create name and profession with just blank space marks as valid characters. This should not be allowed 
+- You can create name and profession with just blank space marks as valid characters. Also with non letter characters such as !"£$% etc... This should not be allowed
+- The app is not responsive so it doesnt look good in mobile view or reduced browser size
 
 
 Here is some instructions to run the tests
