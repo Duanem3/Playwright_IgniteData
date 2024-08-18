@@ -6,10 +6,10 @@ test.describe('Edit User and Validate Required Fields Separately', () => {
 
   test.beforeEach(async ({ page }) => {
     // Navigate to the application and set up UserFormPage
-    await page.goto('http://localhost:3000'); // Adjust the URL if needed
+    await page.goto('/');
     userFormPage = new UserFormPage(page);
 
-    // Common action: Locate and click the edit button for Tom Jones before each test
+    // Click the edit button for Tom Jones before each test
     await userFormPage.editUser('Tom Jones');
   });
 

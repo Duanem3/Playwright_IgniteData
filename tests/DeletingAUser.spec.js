@@ -6,7 +6,7 @@ test.describe('Delete User and Verify Removal', () => {
 
   test.beforeEach(async ({ page }) => {
     // Navigate to the application and set up UserFormPage
-    await page.goto('http://localhost:3000'); // Adjust the URL if needed
+    await page.goto('/');
     userFormPage = new UserFormPage(page);
   });
 

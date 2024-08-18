@@ -6,7 +6,7 @@ test.describe('Test that Name Input, Profession Field, and Date of Birth Validat
 
   test.beforeEach(async ({ page }) => {
     // Navigate to the application and set up UserFormPage
-    await page.goto('http://localhost:3000');
+    await page.goto('/');
     userFormPage = new UserFormPage(page);
   });
 
@@ -30,9 +30,12 @@ test.describe('Test that Name Input, Profession Field, and Date of Birth Validat
     await userFormPage.fillDateOfBirth('1999-04-23');
 
     // Leave the profession field empty
-    await userFormPage.fillProfession(''); // Make sure this field is empty
+    await userFormPage.fillProfession(''); // Enters an empty field
     await userFormPage.assertAddButtonIsDisabled();
   });
+
+
+  //TEst below will test the validation when the date of birth field is empty. However you cant seem to delete the date
 
  /*  test('should require the Date of Birth field for enabling the Add New User button', async () => {
     // Fill in the name with a valid value

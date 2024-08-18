@@ -66,7 +66,7 @@ class UserFormPage {
     expect(currentDate).toBe(expectedDate);
   }
 
-  // User list management
+  // Created User table list functions
   getUserRow(userName) {
     return this.page.locator('tr', { hasText: userName });
   }
