@@ -7,8 +7,8 @@
 - Maybe the date field should be empty as default and not be prefilled with todays date
 - There should be some indication as to what format the date is in, as it isnt clear at first what format it takes
 - When you are adding a user, when you enter a name and a profession and then remove them, you get a "*" error validation message. However this message should be a bit more descriptive, for example "Please enter a name". It seems to show a more relevant message on edit user mode
-- It is not clearly indicated with the 'Add new User' button when it is enabled and disabled. Maybe a colur change of enable or disabled state should be applied to indicate users that they can click the button
-- There is no indication that you have entered an invalid date. Forexample, you can enter a date such as "abcd2024-08-17".
+- It is not clearly indicated with the 'Add new User' button when it is enabled and disabled. Maybe a colour change of enable or disabled state should be applied to indicate users that they can click the button
+- There is no indication that you have entered an invalid date. For example, you can enter a date such as "abcd2024-08-17".
 - Should think about adding ids to the field elements as it the best method for interacting with elements. At the moment, using the name attribute is the next best way, however this can cause maintainability issues if there are other elements on the page with the same name or the name changes in the future
 - Maybe the 'Profession' field should have text length validation just like the name field. As when the profession is really long, the view users table gets misaligned and doesnt look good
 - You can create name and profession with just blank space marks as valid characters. Also with non letter characters such as !"£$% etc... This should not be allowed
